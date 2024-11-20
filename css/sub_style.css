@@ -1,0 +1,244 @@
+body{
+  background-color: #fff8f0;
+}
+.w_bg{
+  background-color: #fff;
+}
+
+/* sub_section */
+.sub_section{
+  width: 1000px;
+  margin: 30px auto;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.l_menu{
+  width: 200px;
+  padding-bottom: 70px;
+  height: 300px;
+}
+.l_top>img{
+  margin: 0 auto;
+}
+.l_nav{
+  margin: 20px 0 40px;
+  padding: 0 20px;
+}
+.l_nav>li{
+  border-bottom: 1px solid #ddd;
+}
+.l_nav>li>a{
+  padding: 15px 0;
+  font: 700 1em "Noto Sans KR";
+  color: #666;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.l_nav>li>a:hover{
+  color: #ee791c;
+}
+.l_nav>li>a>span{
+  width: 14px;
+  height: 14px;
+  background: url(../imgs/arrow.png) no-repeat;
+}
+/* .l_nav>li:nth-child(1)>a>span{
+  background-position: -14px 0;
+} */
+.l_nav>li>a:hover span{
+  background-position: -14px 0;
+}
+
+.r_section{
+  width: 780px;
+  height: auto;
+  padding: 30px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+}
+.g_top{
+  width: 100%;
+  height: 164px; /* 백그라운드 세로이미지 크기 */
+  border-bottom: 1px solid #ddd;
+}
+
+.home{
+  display: flex;
+  align-items: center;
+}
+.home>li{
+  font: 0.8em "돋움";
+  color: #aaa;
+  margin: 0 3px;
+}
+.home>li:nth-child(2n){
+  font-size: 0.5em;
+  color: #d1d1d1;
+}
+.sub_article{
+  margin-top: 50px;
+}
+.sub_article>img{
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+}
+
+
+.g_top>h1{
+  margin: 20px 0;
+  font: 700 2.8em "Noto Sans KR";
+  color: #333;
+}
+.t_text{
+  font-size: 12.5px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.festival_info, .history_info{
+  margin-top: 30px;
+}
+.festival_info li{
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+}
+.festival_info li p:nth-child(1){
+  width: 60px;
+  text-align: center;
+  background-color: #ee791c;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  padding: 5px 7px;
+  border-radius: 10px;
+}
+.festival_info li p:nth-child(2){
+  margin-left: 50px;
+  font-size: 18px;
+}
+
+.history_info>li{
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  /* padding-bottom: 20px;
+  border-bottom: 1px solid #ee791c; */
+}
+.history_info>li img{
+  width: 120px;
+}
+.r_info{
+  margin-left: 40px;
+}
+.r_info>li:nth-child(1) p{
+  font-weight: 600;
+  color: #ee791c;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.r_info>li:nth-child(1) p::before{
+  content: "●";
+  margin-right: 5px;
+  font-size: 10px;
+}
+.r_info>li:nth-child(2) p:nth-child(1), .r_info>li:nth-child(3) p:nth-child(1){
+  margin-top: 12px;
+  background-color: #ffecdc;
+  display: inline-block;
+  color: #ee791c;
+  padding: 0 10px;
+  border-radius: 3px;
+}
+.r_info>li>p:nth-child(2){
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.fprogram>img{
+  display: block;
+  width: 100%;
+}
+.fprogram span{
+  font-size: 20px;
+}
+.nrjw, .dining{
+  margin-top: 50px;
+}
+.nrjw>p, .dining>p, .fprogram>p{
+  text-align: center;
+  background-color: #ee791c;
+  color: #fff;
+  margin-bottom: 30px;
+  padding: 10px 0;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.nrjw>img, .dining>img{
+  width: 100%;
+  display: block;
+}
+.max_767{
+  display: none;
+}
+
+@media all and (max-width: 1024px){
+  .sub_section{
+    width: 100%;
+    flex-direction: column;
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
+  .l_menu{
+    display: none;
+  }
+  .r_section{
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 767px){
+  .g_top{
+    height: auto;
+  }
+  .g_top>h1{
+    font-size: 2em;
+    margin: 10px 0;
+  }
+  .festival_info p{
+    font-size: 16px !important;
+  }
+  .festival_info li p:nth-child(1){
+    padding: 2px 5px !important;
+  }
+  .festival_info li p:nth-child(2) {
+    margin-left: 20px;
+  }
+  .sub_article{
+    margin-top: 20px;
+  }
+  .history_info>li{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .history_info>li:last-child{
+    margin-bottom: 0;
+  }
+  .r_info{
+    width: 100%;
+    margin-top: 20px;
+  }
+  .max_767{
+    display: block;
+  }
+  .fprogram>p{
+    font-size: 14px;
+  }
+}
